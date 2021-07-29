@@ -1,0 +1,204 @@
+:root {
+    --white: #ffffff;
+    --gray-light: #f5fbfc;
+    --gray-dark: #08090a;
+    --green: #35b8be;
+    --green-dark: #1b9097;
+    --green-light: #f5fbfc;
+    --blue-dark: #546285;
+}
+
+@media (min-width: 1200px){
+
+body{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    font-size: 16px;
+}
+
+.container{
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+/*Titre + barre bleu avec le background des vagues*/
+.headtitle{
+    display: block;
+}
+
+header{
+    display: block;
+}
+
+.burgertel{
+    display: none;
+}
+
+.headtitle{
+    background-color: var(--green) ;
+    color: var(--white);
+    background-image: url(images/banner_wave.svg);
+    text-align: center;
+    font-size: 16px;
+    padding: 15px;
+    margin-top: -4px;
+}
+
+/*Logo + Liens qui sont centrés et margés*/
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links img{
+    width: 60px;
+}
+
+nav .links ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav .links a {
+    color: var(--gray-dark);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*Section 1 comprenent le H1 + le P + l'image à mettre côte-à-côte*/
+.beautifood{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.beautifood h1 {
+    font-size: 3.5em;
+}
+
+.beautifood .greendelivered{
+    color: var(--green)
+}
+
+.beautifood p {
+    font-size: 1em;
+    color: var(--blue-dark);
+    margin-bottom: 50px;
+    margin: 0;
+}
+
+.beautifood a {
+    color: var(--white);
+    text-decoration: none;
+    background-color: var(--green);
+    padding: 10px 25px;
+    border-radius: 5px;
+    transition: background-color 500ms;
+    background-image: url(images/button_wave.svg);
+}
+
+.beautifood a:hover {
+    background-color: var(--gray-dark);
+    transition: background-color 500ms;
+}
+
+.beautifoodtxt{
+    text-align: left;
+}
+
+.beautifood img{
+    width: 500px;
+}
+
+/*Section 2 comprenent le H1 + le P + l'image à mettre côte-à-côte*/
+.freshproduct{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 65px;
+    background-color: var(--gray-light);
+    background-size: 1900px;
+}
+
+.freshproduct h1 {
+    font-size: 3.5em;
+    color: var(--green);
+    margin: 0;
+}
+
+.freshproduct p {
+    font-size: 1em;
+    color: var(--blue-dark);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0;
+}
+
+.freshproduct a {
+    color: var(--white);
+    text-decoration: none;
+    background-color: var(--green);
+    padding: 10px 25px;
+    border-radius: 5px;
+    transition: background-color 500ms;
+}
+
+.freshproduct a:hover {
+    background-color: var(--gray-dark);
+    transition: background-color 500ms;
+}
+
+.eatxt{
+    margin-left: 300px;
+    text-align: left;
+}
+
+.freshproduct img{
+    margin-right: 300px;
+    width: 500px;
+}
+
+/*Section 3 comprenent le H1 + les P + les images à mettre côte-à-côte*/
+
+.works h1 {
+    font-size: 3.5em;
+    color: var(--green);
+    text-align: center;
+    margin-top: 70px;
+}
+
+.treeround{
+    display: flex;
+    justify-content: space-between;
+}
+
+.treeround h3{
+    text-align: center;
+}
+
+.treeround p{
+    text-align: center;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.foot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.power{
+    color: var(--green-dark);
+}
+
+.cov{
+    color: var(--blue-dark);
+}
+
+.accept img{
+    width: 350px;
+}
+}

@@ -1,0 +1,153 @@
+:root {
+    --white: #ffffff;
+    --gray-light: #f5fbfc;
+    --gray-dark: #08090a;
+    --green: #35b8be;
+    --green-dark: #1b9097;
+    --green-light: #f5fbfc;
+    --blue-dark: #546285;
+}
+
+/*On définit des marges et une police (avec sa taille) principales pour le corps de la page*/
+body{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    font-size: 16px;
+}
+
+/*On cache le titre principal et sa bande bleue sur la version mobile*/
+.headtitle{
+    display: none;
+}
+
+/*On cache sur la version mobile les 5 liens*/
+.linkweb{
+    display: none;
+}
+
+/*On aligne ici les deux icônes logo + burger*/
+.links{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*On modifie la taille des deux icônes logo + burger*/
+.links img{
+    width: 35px;
+    margin: 30px;
+}
+
+/*On centre et aligne la première section*/
+.beautifood{
+    display: inline-block;
+    text-align: center;
+}
+
+/*On modifie la police du titre principal, commençant par beautiful*/
+.beautifood h1 {
+    font-size: 3.5em;
+}
+
+/*On applique une autre couleur de police pour le mot "delivered" de la phrase*/
+.beautifood .greendelivered{
+    color: var(--green)
+}
+
+/*On applique un changement de couleur et de taille d'écriture du paragraphe sous le titre*/
+.beautifood p {
+    font-size: 1em;
+    color: var(--blue-dark);
+    margin: 20px;
+    padding-bottom: 50px;
+}
+
+/*On modifie l'aspect intégral du bouton "Place an order"*/
+.beautifood a {
+    color: var(--white);
+    text-decoration: none;
+    background-color: var(--green);
+    padding: 10px 25px;
+    border-radius: 5px;
+    background-image: url(images/button_wave.svg);
+}
+
+/*On modifie la taille de l'image de la section, ici l'assiette et on lui met une large externe à partir du haut*/
+.beautifood img{
+    width: 350px;
+    margin-top: 100px;
+}
+
+/*On fait les mêmes commandes, pour cette fois-ci la section "freshproduct"*/
+.freshproduct{
+    display: inline-block;
+    text-align: center;
+    background-color: var(--gray-light);
+}
+
+.freshproduct h1 {
+    font-size: 3.5em;
+    color: var(--green);
+    margin: 30px;
+    margin-top: 100px;
+}
+
+.freshproduct p {
+    font-size: 1em;
+    color: var(--blue-dark);
+    margin: 20px;
+    padding-bottom: 20px;
+}
+
+.freshproduct a {
+    color: var(--white);
+    text-decoration: none;
+    background-color: var(--green);
+    padding: 10px 25px;
+    border-radius: 5px;
+    background-image: url(images/button_wave.svg);
+}
+
+.freshproduct img{
+    width: 350px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+/*On fait les mêmes commandes, pour cette fois-ci la section "works"*/
+
+.treeround{
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+}
+
+.treeround img{
+    width: 300px;
+}
+
+.works h1 {
+    font-size: 3em;
+    color: var(--green);
+    margin-top: 70px;
+    text-align: center;
+}
+
+.works p {
+    color: var(--green-dark);
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+footer p{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+.power{
+    color: var(--green-dark);
+}
+
+.cov{
+    color: var(--blue-dark);
+}
